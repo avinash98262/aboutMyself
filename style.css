@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+    
+}
+
+
+.header-class{
+    /* background-color: red; */
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-image: url(imges/pexels-olya-kobruseva-6906626.jpg);
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+nav{
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+.nav{
+    /* background-color: blue; */
+    flex: 1;
+    text-align: right;
+    
+}
+
+.nav ul li{
+    /* background-color: yellow; */
+    list-style: none;
+    display: inline-block;
+    /* the name itself told that in line block me means in pieces  */
+
+    position: relative;
+    padding: 6px 10px ;
+
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size:20px ;
+    
+}
+
+
+.nav ul li ::after,.subtitle::after ,.header::after{
+    width: 0;
+    height: 2px;
+    content: " ";
+    background: tomato;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.nav ul li a :active{
+    color: aqua;
+
+}
+.nav ul li:hover ::after{
+    width: 100%;
+}
+
+.subtitle:hover::after,.header:hover::after{
+    width: 38%;
+ 
+}
+
+.heading h1{
+    font-size: 56px;
+}
+
+@media(max-width:700px){
+    .heading h1{
+        font-size: 26px;
+    }
+    
+}
+.heading{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-left: 15px;
+    color: black;
+    font-weight: 600;
+
+}
+
+
+.subtitle{
+    color: #555;
+}
+
+.links{
+    margin-top: 23%;
+
+    position: fixed;
+}
+.sites img{
+    border: 1px solid black;
+    /* background-color: gray; */
+    border-radius: 50%;
+    position: relative;
+}
+
+
+
+/* about  */
+.about{
+    /* background-color: red; */
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-col{
+    display: flex;
+    flex-basis: 35%;
+    /* background-color: blue; */
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.about-col img{
+    width: 25%;
+    height: 25%;
+    border-radius: 10%;
+    margin: 2%;
+    border: 2px solid black;
+}
+h4{
+    /* background-color: yellow; */
+    color: #999;
+    text-align: left;
+}
+.header {
+    /* background-color: greenyellow; */
+    font-size: 36px;
+    font-weight: 600;
+    padding-bottom: 5%;
+ 
+
+}
+
+.about-col p{
+    padding-top: 7%;
+}
+
+/* education */
+.education{
+    padding-top: 100px;
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.education img{
+    width: 100%;
+    padding-top: 5%;
+    border: 1px solid #999;
+}
+
+
+/* skills */
+
+.skills{
+    /* background-color: red; */
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.skills ul li{
+    /* background-color: blue; */
+    text-align: left;
+    list-style: square;
+    padding-top: 2%;
+}
+
+.skills h2{
+    padding-bottom: 5%;
+    text-align: left;
+}
+
+/* experience */
+.experience{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+
+.experience img{
+    width: 50%;
+    height: 50%;
+    margin: 2%;
+    border: 1px solid #999;
+}
+
+.projects{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    text-align: center;
+    /* background-color: #eee4e4; */
+    background-color: #f4f4f4;
+    /* padding-bottom: 30px; */
+
+}
+
+.projects img{
+    width: 60%;
+}
+
+.footer{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    
+}
+
+@media(max-width:700px)
+{
+    .footer{
+        font-size: 16px;
+    }
+
+    .links{
+        margin-top: 23%;
+        position: relative;
+    }
+    
+}
+
+/* extra */
+.sites:hover{
+    border: 1px solid red;
+    background-color: #999;
+    /* border-radius: 80%; */
+}
