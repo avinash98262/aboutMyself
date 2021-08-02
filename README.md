@@ -1,2 +1,2 @@
 # aboutMyself
-this is my repository on the git 
+this is my first repository on the git 
